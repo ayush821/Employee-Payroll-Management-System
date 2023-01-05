@@ -1,0 +1,49 @@
+<br>
+<br>
+<div class="box">
+    <div class="formlabel">Add Salary</div>
+    <form class="form" [formGroup]="salaryRef" (ngSubmit)="storeSalary()">
+        <br>
+        <div class="formgroup">
+        <label class="salaryidlabel">SalaryID</label>
+        <input type="number" formControlName="salaryid" required id="s1"><br/>
+        </div>
+        <br>
+        <div class="formgroup">
+        <label class="eidlabel">EId</label>
+        <input type="number" formControlName="eid" id="s2"><br/>
+        </div>
+        <br>
+        <div class="formgroup">
+        <label class="monthlabel">Month</label>
+        <select name="select" formControlName="month" id="s3">
+            <option value="" selected disabled hidden>select the month</option>
+            <option>January</option>
+            <option>February</option>
+            <option>March</option>
+            <option>April</option>
+            <option>May</option>
+            <option>June</option>
+            <option>July</option>
+            <option>August</option>
+            <option>September</option>
+            <option>October</option>
+            <option>November</option>
+            <option>December</option>
+        </select>
+        </div>
+        <br>
+        <div class="formgroup">
+        <label class="salarylabel">Salary</label>
+        <input type="number" formControlName="salary" id="s4"><br/>
+        </div>
+        <br>
+        <div class="buttongroup">
+        <input title="click here to store the salary data" class="btn btn-success" type="submit" value="Store Salary" id="s5"/> &nbsp; &nbsp; &nbsp;
+        <input title="click here to reset the data" type="reset" value="reset"/><br/>
+        </div>
+    </form><br/>
+    <span class="msg">{{storeMsg}}</span>
+</div>
+
+ 

@@ -1,0 +1,9 @@
+
+			**SQL COMMANDS**
+1. create database rllproject.
+2.use rllproject.
+3.create table employee(id int primary key, firstname varchar(30), lastname varchar(30),role varchar(30),email varchar(30),dob varchar(30),gender varchar(30));
+4.create table salary(salaryid int primary key,eid int, foreign key(eid) references employee(id),month varchar(30),salary int);
+5.create table attendance(aid int primary key,eid int,foreign key(eid) refernces employee(id), date varchar(30),date varchar(30),status varchar(30));
+6.create table leavedata(id int primary key, eid int,foreign key(eid) references employee(id),fdate varchar(30),tdate varchar(30),reason varchar(30));
+7.create table schedule(sid int primary key,eid int,foreign key(eid) references employee(id),date varchar(30), time int, task varchar(30)); 

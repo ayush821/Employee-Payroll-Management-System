@@ -1,0 +1,37 @@
+<div class="main">
+
+    <div class="topmenu">
+        <div class="heading">
+            welcome to admin login
+        </div>
+        <div class="profile">
+            <span> Welcome{{user}}</span>
+            <span>
+                <form name="form1" method="post" action="log_out.php">
+                    <input class="logout" type="submit" value="log out" (click)="logout()">
+                </form>
+            </span>
+
+        </div>
+
+    </div>
+    <div class="section">
+        <div class="menu">
+
+            <span routerLink="addEmployee" id="ae1">Add Employee</span>
+            <span routerLink="findAllEmployee" id="ae2">View Employee</span>
+
+            <span routerLink="addSalary" id="ae3">Add Salary</span>
+            <span routerLink="addAttendance" id="ae4">Add Attendance</span>
+            <span routerLink="addSchedule" id="ae5">Add Schedule</span>
+            <span routerLink="addLeavedata" id="ae6">Add Leavedata </span>
+
+
+        </div>
+        <div class="content">
+            <router-outlet></router-outlet>
+        </div>
+
+    </div>
+
+</div>

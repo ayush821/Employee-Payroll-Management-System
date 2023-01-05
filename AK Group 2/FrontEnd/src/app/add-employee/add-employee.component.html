@@ -1,0 +1,63 @@
+<br>
+<br>
+<div class="box">
+    <div class="formlabel">Add Employee</div>
+    <form class="form" [formGroup]="employeeRef" (ngSubmit)="storeEmployee()">
+        <br>
+        <div class="formgroup">
+        <label class="idlabel">ID</label>
+        <input type="number" formControlName="id" required id="e1"><br/>
+        <br>
+        </div>
+        
+        <div class="formgroup">
+        <label class="firstnamelabel">FirstName</label>
+        <input type="text" formControlName="firstname" id="e2"><br/>
+        </div>
+        <br>
+        <div class="formgroup">
+        <label class="lastnamelabel">LastName</label>
+        <input type="text" formControlName="lastname" id="e3"><br/>
+        </div>
+        <br>
+        <div class="formgroup">
+        <label class="rolelabel">Role</label>
+        
+        <select name="role" formControlName="role" id="e4">
+            <option value="none" selected disabled hidden>
+                Select an Option
+            </option>
+            <option value="developer">Developer</option>
+            <option value="support">support</option>
+            <option value="testing">Testing</option>
+
+        </select>
+        </div>
+        <br>
+        <div class="formgroup">
+        <label class="emaillabel">EmailId</label>
+        <input type="text" formControlName="emailid" id="e5"><br/>
+        </div>
+        <br>
+        <div class="formgroup">
+        <label class="doblabel">DOB</label>
+        <input type="date" formControlName="dob" id="e6"><br/>
+        </div>
+        <br>
+        <div class="formgroup">
+        <label class="genderlabel">Gender</label>
+        <select formControlName="gender" id="e7">
+            <option value="none" selected disabled hidden>Select your gender</option>
+            <option>Male</option>
+            <option>Female</option>
+            <option>Other</option>
+        </select>
+        </div>
+        <br>
+        <div class="buttongroup">
+        <input title="click here to store the employee data" type="submit" value="Store Employee" id="e8"/>  &nbsp; &nbsp; &nbsp;
+        <input title="click here to reset the data" class="reset" type="reset" value="reset"/><br/>
+        </div>
+    </form><br/>
+    <span class="msg">{{storeMsg}}</span>
+</div>

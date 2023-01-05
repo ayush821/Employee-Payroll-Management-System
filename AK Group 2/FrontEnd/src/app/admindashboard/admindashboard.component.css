@@ -1,0 +1,71 @@
+.topmenu{
+    padding:40px;
+    background-color: gray;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    position: relative;
+}
+
+
+.main{
+    font-size:larger;
+
+}
+.menu {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: lightgray;
+    border-radius: 5px;
+}
+.menu span{
+    padding:25px;
+    text-align:center;
+    
+
+}
+.menu div{
+    padding:15px;
+}
+.menu span:hover{
+    cursor: pointer;
+    background-color: gray;
+    color:white;
+
+}
+.section{
+    display:flex;
+    width: 100%;
+    
+
+}
+
+.h2{
+    text-align: center;
+    color: cadetblue;
+}
+a{
+    color: seagreen;
+}
+
+.menu span form input{
+    padding:2px 10px 2px 10px;
+}
+
+.logout{
+    padding:7px;
+    position:absolute;
+    bottom:0;
+    right:0;
+    width: 100px;
+}
+.logout:hover{
+    cursor: pointer;
+}
+.profile{
+    display:flex;
+}
+.content{
+    width: 100%;
+}

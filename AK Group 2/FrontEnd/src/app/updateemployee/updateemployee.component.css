@@ -1,0 +1,38 @@
+table,th,td{
+    border:1px solid black;
+}
+.formlabel{
+    text-align: center;
+    background-color:lightgray;
+    font-size: 30px;
+    padding: 10px;
+    font-weight: bold
+
+}
+.emaillabel,.idlabel,.firstnamelabel,.lastnamelabel,.doblabel,.genderlabel{
+    width:20%;
+    display: inline-block;
+    font-weight: bold
+
+}
+.form{
+    margin-top:10px;
+    padding:10px
+}
+.formgroup input {
+    width:75%;
+    padding:4px;
+}
+.formgroup select {
+    width:75%;
+    padding:4px;
+}
+.buttongroup{
+    margin-left: 20%;
+}
+.buttongroup input:hover{
+    cursor: pointer;
+}
+.reset{
+    padding-left: 5px;
+}

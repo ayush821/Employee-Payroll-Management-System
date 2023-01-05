@@ -1,0 +1,43 @@
+<br>
+<br>
+<br>
+<div class="box">
+    <div class="formlabel">Login</div>
+    <form class="form" [formGroup]="loginRef" (ngSubmit)="signin()">
+        <div class="formgroup">
+            <label class="emaillabel">Email : </label>
+            <input type="email" formControlName="emailid" required="" id="email"/><br />
+            <div *ngIf="loginRef.controls['emailid']?.invalid && loginRef.controls['emailid']?.touched">
+                <span class="usermsg">Email ID is required</span>
+            </div>
+        </div>
+        <br>
+        <div class="formgroup">
+            <label class="passwordlabel">Password : </label>
+            <input type="password" formControlName="password" required="" id="password"/><br />
+            <div *ngIf="loginRef.controls['password']?.invalid && loginRef.controls['password']?.touched">
+                <span class="usermsg">Password is required</span>
+            </div>
+        </div>
+        <br>
+
+        <div class="radio">
+            <label class="radiolabel">TypeOfUser : </label>
+            <input type="radio" name="typeOfUser" value="admin" formControlName="typeOfUser" required="" id="r1"/>Admin
+            <input type="radio" name="typeOfUser" value="user" formControlName="typeOfUser" required="" id="r2"/>Employee<br /><br />
+        </div>
+
+        <div class="buttongroup">
+            <input type="submit" value="Login" id="submit"/> &nbsp;
+            <input type="reset" value="Reset" />
+        </div>
+
+    </form>
+    <div class="registerlink"><a routerLink="/signup" id="re1">Register</a></div><br>
+    
+    <span style="color:red">{{msg}}</span>
+    <br>
+    
+    
+    
+</div>

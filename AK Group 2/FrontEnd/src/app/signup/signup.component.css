@@ -1,0 +1,55 @@
+.box{
+    box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.2);
+    width:40%;
+    height:200%;
+
+    margin:auto;
+}
+.emaillabel, .passwordlabel, .radiolabel{
+    width:20%;
+    display: inline-block;
+    font-weight: bold
+
+}
+
+.formlabel{
+    text-align: center;
+    background-color:lightgray;
+    font-size: 30px;
+    padding: 10px;
+    font-weight: bold
+
+}
+.form{
+    margin-top:10px;
+    padding:10px
+}
+.formgroup input {
+    width:75%;
+    padding:5px;
+    
+}
+.buttongroup{
+    margin-left: 20%;
+}
+.buttongroup input{
+    box-shadow: 0px 0px 0px 1px rgba(0,0,0,0.5);
+    background-color: white;
+    border:none;
+    padding: 3px 13px 3px 13px;
+
+}
+.buttongroup input:hover{
+    cursor: pointer;
+}
+.registerlink{
+    margin-left: 20%;
+}
+.link{
+    margin-left: 20%;
+}
+.usermsg{
+    margin-left: 20%;
+    color: red;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

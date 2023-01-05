@@ -1,0 +1,40 @@
+.box{
+    box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.2);
+    width:75%;
+    height:100%;
+
+    margin:auto;
+}
+.formlabel{
+    text-align: center;
+    background-color:lightgray;
+    font-size: 30px;
+    padding: 1px;
+    font-weight: bold
+
+}
+.eidlabel{
+    width:20%;
+    display: inline-block;
+    font-weight: bold
+}
+.form{
+    margin-top:10px;
+    padding:10px
+}
+.formgroup input {
+    width:75%;
+    padding:4px;
+}
+.buttongroup{
+    margin-left: 20%;
+}
+.buttongroup input:hover{
+    cursor: pointer;
+}
+.esch{
+    
+        color: cadetblue;
+        margin-left: 20%;
+    
+}

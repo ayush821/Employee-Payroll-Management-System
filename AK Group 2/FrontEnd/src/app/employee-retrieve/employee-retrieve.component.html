@@ -1,0 +1,78 @@
+<div>
+    <h2>Add Employee Details</h2>
+    <div *ngIf="flag">
+            <div class="formlabel">Update Employee</div>
+            >
+            <form class="form" (ngSubmit)="updateDataFromDb()">
+                <div class="formgroup">
+                <label class="idlabel">Id</label>
+                <input type="number" name="id" [(ngModel)]="id" readonly /><br/>
+                </div>
+                <br>
+                <div class="formgroup">
+                <label class="firstnamelabel">FirstName</label>
+                <input type="text" name="firstname" [(ngModel)]="firstname"/><br/>
+                </div>
+                <br>
+                <div class="formgroup">
+                <label class="lastnamelabel">LastName</label>
+                <input type="text" name="lastname" [(ngModel)]="lastname"/><br/>
+                </div>
+                <br>
+                <div class="formgroup">
+                <label class="emaillabel">EmailId</label>
+                <input type="text" name="emailid" [(ngModel)]="emailid"/><br/>
+                </div>
+                <br>
+                <div class="formgroup">
+                <label class="rolelabel">Role</label>
+                
+                <select name="role" [(ngModel)]="role">
+                    <option value="none" selected disabled hidden>
+                        Select an Option
+                    </option>
+                    <option value="developer">Developer</option>
+                    <option value="support">support</option>
+                    <option value="testing">Testing</option>
+        
+                </select>
+                </div>
+                <br>
+
+                <div class="buttongroup">
+                <input type="submit" value="update data" /> &nbsp; &nbsp; &nbsp;
+                <input type="reset" value="reset"/>
+                </div>
+            </form>
+            
+    </div>
+    
+    <span *ngFor="let e of employees"><br/><br/>
+        <table style="width:100%">
+            
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Role</th>
+                <th>Email ID</th>
+                <th colspan="2" >Action</th>
+                    
+            </tr>
+            <tr>
+                <td>{{e.firstname}}</td>
+                <td>{{e.lastname}}</td>
+                <td>{{e.role}}</td>
+                <td>{{e.emailid}}</td>
+                
+                <td><input  type="button" value="delete" (click)="deleteEmployee(e.id)"/> &nbsp; &nbsp; &nbsp;</td>
+                <td> <input  type="button" value="update" (click)="updateEmployee(e)"/> </td>
+                
+                
+            </tr>
+        </table>
+             
+        <br>
+        
+        
+    </span>
+</div>

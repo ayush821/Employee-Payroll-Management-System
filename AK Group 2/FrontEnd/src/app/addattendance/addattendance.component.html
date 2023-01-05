@@ -1,0 +1,33 @@
+<br>
+<br>
+<div class="box">
+    <div class="formlabel">Add Attendance</div>
+    <form class="form" [formGroup]="attendanceRef" (ngSubmit)="storeAttendance()"><br>
+        <div class="formgroup">
+        <label class="attendanceidlabel">AttendanceID</label>
+        <input type="number" formControlName="aid" id="a1"><br/>
+        </div>
+        <br>
+        <div class="formgroup">
+        <label class="eidlabel">EId</label>
+        <input type="number" formControlName="eid" id="a2"><br/>
+        </div>
+        <br>
+        <div class="formgroup">
+        <label class="datelabel">Date</label>
+        <input type="date" formControlName="date" id="a3"><br/>
+        </div>
+        <br>
+        <div class="formgroup">
+        <label class="statuslabel">Status</label>
+        <input type="text" formControlName="status" id="a4"><br/>
+        </div>
+        <br>
+        <div class="buttongroup">
+        <input title="click here to store the attendance data" type="submit" value="Store Attendance" id="a5"/> &nbsp; &nbsp; &nbsp;
+        <input title="click here to reset the data" type="reset" value="reset"/><br/>
+        </div>
+    </form>
+    <span class="msg">{{storeMsg}}</span>
+</div>
+

@@ -1,0 +1,21 @@
+<div class="box">
+    <div class="formlabel">
+        <h2>view salary</h2>
+    </div>
+    <br>
+    <br>
+    
+        <div class="formgroup">
+            <label class="eidlabel">Employee Id</label>
+            <input type="number" [(ngModel)]="eid" id="vs1"/>
+        </div>
+
+    
+    <br/>
+    <div class="buttongroup">
+    <button (click)="viewsalary(eid)" id="vs2">View salary</button>
+    </div>
+    <br>
+    <span class="esal"> {{esalary}}</span>
+    
+</div>

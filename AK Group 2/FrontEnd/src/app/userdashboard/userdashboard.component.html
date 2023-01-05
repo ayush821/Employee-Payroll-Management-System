@@ -1,0 +1,36 @@
+<div class="main">
+
+    <div class="topmenu">
+        <div class="heading">
+            welcome to User login
+        </div>
+        <div class="profile">
+            <span> Welcome {{user}}</span>
+            <span>
+                <form name="form1" method="post" action="log_out.php">
+                    <input class="logout" type="submit" value="log out" (click)="logout()">
+                </form>
+            </span>
+
+        </div>
+
+    </div>
+    <div class="section">
+        <div class="menu">
+
+            <span routerLink="/viewsalary" id="ue1">View Salary</span>
+            <span routerLink="/viewschedule" id="ue2">View Schedule</span>
+
+            <span routerLink="/viewattendance" id="ue3">View Attendance</span>
+            <span routerLink="/updateEmployeebyuser" id="ue4">Update profile</span>
+            
+
+
+        </div>
+        <div class="content"> Welcome  to Employee PayRoll Management
+            <router-outlet></router-outlet>
+        </div>
+
+    </div>
+
+</div>

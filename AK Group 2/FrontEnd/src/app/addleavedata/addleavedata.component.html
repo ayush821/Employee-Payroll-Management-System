@@ -1,0 +1,40 @@
+<br>
+<br>
+<div class="box">
+    <div class="formlabel">Add Leavedata</div>
+    <form class="form" [formGroup]="leavedataRef" (ngSubmit)="storeLeavedata()">
+        <br>
+        <div class="formgroup">
+        <label class="leaveidlabel">Leave ID</label>
+        <input type="number" formControlName="lid" id="l1"><br/>
+        </div>
+        <br>
+        <div class="formgroup">
+        <label class="eidlabel">EId</label>
+        <input type="number" formControlName="eid" id="l2"><br/>
+        </div>
+        <br>
+        <div class="formgroup">
+        <label class="fdatelabel">FDate</label>
+        <input type="date" formControlName="fdate" id="l3"><br/>
+        </div>
+        <br>
+        <div class="formgroup">
+        <label class="tdatelabel">TDate</label>
+        <input type="date" formControlName="tdate" id="l4"><br/>
+        </div>
+        <br>
+        <div class="formgroup">
+        <label class="reasonlabel">Reason :</label>
+        
+        <textarea rows="3" cols="50" formControlName="reason" id="l5"></textarea>
+        </div>
+        <br>
+        <div class="buttongroup">
+        <input title="click here to store the leaves data" type="submit" value="Store Data" id="l6"/> &nbsp;&nbsp;
+        <input title="click to reset the data" type="reset" value="reset"/><br/>
+        </div>
+    </form><br/>
+    <span class="msg">{{storeMsg}}</span>
+</div>
+

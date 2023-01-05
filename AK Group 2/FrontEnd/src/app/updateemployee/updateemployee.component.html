@@ -1,0 +1,52 @@
+<div>
+    <div class="formlabel">Update Profile</div>
+    
+    <form class="form" [formGroup]="employeeRef" (ngSubmit)="updateEmployeebyuser(id)">
+        <div class="formgroup">
+        <label class="idlabel">Id</label>
+        <input type="number" name="id" formControlName="id" /><br/>
+        </div>
+        <br>
+        <div class="formgroup">
+        <label class="firstnamelabel">FirstName</label>
+        <input type="text" name="firstname" formControlName="firstname"/><br/>
+        </div>
+        <br>
+        <div class="formgroup">
+        <label class="lastnamelabel">LastName</label>
+        <input type="text" name="lastname" formControlName="lastname"/><br/>
+        </div>
+        <br>
+        <div class="formgroup">
+        <label class="emaillabel">EmailId</label>
+        <input type="text" name="emailid" formControlName="emailid"/><br/>
+        </div>
+        <br>
+        <div class="formgroup">
+            <label class="doblabel">DOB</label>
+            <input type="date" name="DOB" formControlName="dob"/><br/>
+        </div>
+        <br>
+        <div class="formgroup">
+            <label class="genderlabel">Gender</label>
+            
+            <select name="gender" formControlName="gender">
+                <option value="none" selected disabled hidden>
+                    Select an Option
+                </option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="others">Others</option>
+    
+            </select>
+            </div>
+            <br>
+        
+
+        <div class="buttongroup">
+        <input type="submit" value="update Employee"/> &nbsp; &nbsp; &nbsp;
+        <input type="reset" value="reset"/>
+        </div>
+    </form>
+    
+</div>

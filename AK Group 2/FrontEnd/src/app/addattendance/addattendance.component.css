@@ -1,0 +1,43 @@
+.formlabel{
+    text-align: center;
+    background-color:lightgray;
+    font-size: 30px;
+    padding: 10px;
+    font-weight: bold
+
+}
+.attendanceidlabel,.eidlabel,.datelabel,.statuslabel{
+    width:20%;
+    display: inline-block;
+    font-weight: bold
+
+}
+.form{
+    margin-top:10px;
+    padding:10px
+}
+.formgroup input {
+    width:75%;
+    padding:4px;
+}
+
+.buttongroup{
+    margin-left: 20%;
+}
+.buttongroup input:hover{
+    cursor: pointer;
+}
+.reset{
+    padding-left: 5px;
+}
+.box{
+    box-shadow: 0px 0px 0px 1px rgba(0,0,0,0.2);
+    width: 70%;
+    
+
+    margin:auto;
+}
+.msg{
+    color: cadetblue;
+    margin-left: 20%;
+}
